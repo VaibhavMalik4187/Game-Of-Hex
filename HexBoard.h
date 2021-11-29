@@ -1,5 +1,6 @@
 #ifndef HEXBOARD_H
 #define HEXBOARD_H
+
 #include <iostream>
 #include <list>
 #include <vector>
@@ -10,7 +11,7 @@ class HexBoard
 {
 public :	
 	HexBoard(int nodes);
-	void make_node(int i, int j, list<int> neighbours);
+	void make_node(int i, int j, list<int> &neighbours);
 	int get_node(int i, int j);
 	void display_board();
 
