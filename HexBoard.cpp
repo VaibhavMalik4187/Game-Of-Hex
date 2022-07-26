@@ -7,7 +7,7 @@ HexBoard::HexBoard(int nodes)
     int count = 0;
     n = nodes;
     graph.resize(n*n); //resize the vector
-    
+
     //mark the neighbours
 
     for(int i = 0; i < n; i++)
@@ -18,6 +18,7 @@ HexBoard::HexBoard(int nodes)
         }
     }
 }
+
 int HexBoard::get_node(int i, int j)
 {
     return n*i + j;
